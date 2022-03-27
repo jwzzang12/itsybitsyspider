@@ -3,22 +3,56 @@
 <head>
   <title>JWZZANG project</title>
   <meta charset="utf-8">
+  <style>
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    h1{
+      text-align: center;
+      font-size: 35px;
+      font-style: oblique;
+    }
+    #list{
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #list a{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    h2{
+      display: inline;
+      margin-right: 20px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1><a href="2022.html">2022 project</a></h1>
-  <ol>
-    <li><a href="1.html">First</a></li>
-    <li><a href="2.html">Second</a></li>
-    <li><a href="3.html">Third</a></li>
-    <li><a href="4.html">Fourth</a></li>
-    <li><a href="https://jwzzang12.tistory.com" target="_blank" title="jwzzang12's blog">Fifth</a></li>
-  </ol>
-
+  <h1><a href="index.html">2022 project</a></h1>
+  <div id="list">
+    <a href="1.html">First</a>
+    <a href="2.html">Second</a>
+    <a href="3.html">Third</a>
+    <a href="4.html">Fourth</a>
+    <a href="https://jwzzang12.tistory.com" target="_blank" title="jwzzang12's blog" style="color:red;text-decoration:underline;">Fifth</a>
+  </div>
+  <div id="title">
   <h2>Record during <u>rehabilitation</u></h2>
-
-  <p>I made this web page to record my life as web site. It was just vague idea for a long time. But I realize that it's time to do something. Because fortunately(?) I've got free time because of accident. I sprained my right ankle seriously during working, so recently I got a surgery for that. I currently wear the cast for all day, and it makes me not to go outside.
-  <img src="bensmoke.png" width="300">
-  </p><p>I was planning to go to UK for working but I postponed a bit. I am not sure how long does it take to get well again, but I hope before this autumn. I really want to see fallen leaves of Regent's park.</p><p style="margin-top:420px;">I just find out that write in other language makes the situation seems like less seriously. I like that. 한국인임.</p>
-  </body>
-  </html>
+  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+  <input type="button" value="and" onclick="
+    alert('What did you expect?')">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+  </div>
+  <p>I made this web page to record my life as web site. It was just vague idea for a long time. But I realize that it's time to do something. Because fortunately(?) I've got free time because of accident. I sprained my right ankle seriously during working, so recently I got a surgery for that. I currently wear the cast for all day, and it makes me not to go outside freely.</p>
+  <p><img src="bensmoke.png" width="300"></p>
+  <p>I was planning to go to UK for work but postponed a bit. I am not sure how long does it take to get well again, but I hope before this autumn. I really want to see fallen leaves of Regent's park.</p><p style="margin-top:420px;">Write in other language makes the situation seems like less serious. 원래 한국인임.</p>
+</body>
+</html>
