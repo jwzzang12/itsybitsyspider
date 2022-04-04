@@ -3,6 +3,34 @@
 <head>
   <title>JWZZANG project</title>
   <meta charset="utf-8">
+  <script>
+  function onoffHandler(self){
+    var target = document.querySelector('body');
+    if(self.value === 'off'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = 'on';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'white';
+        i = i + 1;
+      }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      self.value = 'off'
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'black';
+        i = i + 1;
+      }
+    }
+  }
+  </script>
   <style>
     a{
       color: black;
@@ -53,30 +81,7 @@
     target.style.color = 'black';
     ">
     <input type="button" value="off" onclick="
-      var target = document.querySelector('body');
-      if(this.value === 'off'){
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        this.value = 'on';
-
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'white';
-          i = i + 1;
-        }
-      } else {
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
-        this.value = 'off'
-
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'black';
-          i = i + 1;
-        }
-      }
+      onoffHandler(this);
     ">
   </div>
   <p>I made this web page to record my life as web site. It was just vague idea for a long time. But I realize that it's time to do something. Because fortunately(?) I've got free time because of accident. I sprained my right ankle seriously during working, so recently I got a surgery for that. I currently wear the cast for all day, and it makes me not to go outside freely.</p>
